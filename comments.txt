@@ -1,0 +1,43 @@
+//Task 1
+
+At first I went to the page to send Samy a friend request and then from the inspect element 
+I went to the  use the chrome developer tools(inspect element) and from there found a get request.
+The get request gave me the url.
+
+After getting the url ,now it was needed to check if the id from where I am sending request is not Samy,
+to prevent Samy from being attacked by the cod. For that I used view page source and found a elgg json object.
+
+From there I got the userId of the person visiting Samy's profile.
+
+I just used  a  if condition to check if the person was not Samy himself.
+
+
+//Task 2
+
+At first ,after logging in with a account(say Alice) ,I clicked edit profile and changed a accesibility to
+"logged in users" from public and changed the value of the field. I got a "post" request in the network tab.
+I saw the requestbody and thus realized the request url.FInally I incorporated my logic to make
+everythings accesibility "logged in users"(which is accesibility=1).
+
+FInally to make sure Samy doesnot get affected by the code,I used a if condition to check if the 
+person vsiting samy's profile was not Samy himself.
+
+
+//Task 3
+
+For this Task, I logged in from Alice and posted some random things in the wire, thus I got a "Post" request.
+
+I retrieved the url body and parameters and then edited the url.I edited the "body" in the url so that it conatins 
+the link of the Samy's profile and the specified texts before it.
+
+FInally to make sure Samy doesnot get affected by the code,I used a if condition to check if the 
+person vsiting samy's profile was not Samy himself.
+
+
+// Task 4
+At first wormcode was constructed using the code given in the cheetsheet.
+I just needed to pipeline task 1,2 and 3 .With a little change in the task 2 code part,
+
+In that part , I changed the content to contain wormcode.
+
+The rest was as same as previous ones.

